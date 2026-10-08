@@ -1,0 +1,74 @@
+{
+  "scenario_name": "Balanced model",
+  "currency": "USD",
+  "allocations": [
+    {
+      "asset": "EQUITY",
+      "weight": 0.6
+    },
+    {
+      "asset": "BOND",
+      "weight": 0.4
+    }
+  ],
+  "prices": [
+    {
+      "date": "2026-01-28",
+      "asset": "EQUITY",
+      "price": 100
+    },
+    {
+      "date": "2026-01-28",
+      "asset": "BOND",
+      "price": 100
+    },
+    {
+      "date": "2026-01-29",
+      "asset": "EQUITY",
+      "price": 120
+    },
+    {
+      "date": "2026-01-29",
+      "asset": "BOND",
+      "price": 101
+    },
+    {
+      "date": "2026-01-30",
+      "asset": "EQUITY",
+      "price": 90
+    },
+    {
+      "date": "2026-01-30",
+      "asset": "BOND",
+      "price": 102
+    },
+    {
+      "date": "2026-02-02",
+      "asset": "EQUITY",
+      "price": 99
+    },
+    {
+      "date": "2026-02-02",
+      "asset": "BOND",
+      "price": 103
+    },
+    {
+      "date": "2026-02-03",
+      "asset": "EQUITY",
+      "price": 105
+    },
+    {
+      "date": "2026-02-03",
+      "asset": "BOND",
+      "price": 104
+    }
+  ],
+  "rebalancing": "buy_and_hold",
+  "source": "Synthetic demonstration",
+  "adjustment_method": "total_return",
+  "benchmark_asset": "EQUITY",
+  "stress_shocks": {
+    "EQUITY": -0.2,
+    "BOND": -0.05
+  }
+}
